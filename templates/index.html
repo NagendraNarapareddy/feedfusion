@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedFusion</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        input { padding: 10px; width: 300px; margin: 10px; }
+        button { padding: 10px 20px; cursor: pointer; }
+        .posts { display: flex; flex-wrap: wrap; justify-content: center; margin-top: 20px; }
+        .post { border: 1px solid #ddd; padding: 10px; margin: 10px; width: 250px; }
+        footer { margin-top: 20px; padding: 10px; background: #f1f1f1; }
+    </style>
+</head>
+<body>
+    <h1>FeedFusion</h1>
+    <p>Enter a public Instagram username to view posts</p>
+    <input type="text" id="username" placeholder="Enter Instagram Username">
+    <button>Search</button>
+    
+    <div class="posts" id="postContainer"></div>
+
+    <footer>
+        <a href="{{url_for('privacy')}}">Privacy Policy</a> |
+        <a href="{{url_for('terms')}}">Terms of Service</a>
+    </footer>
+    
+</body>
+</html>
